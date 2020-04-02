@@ -11,6 +11,7 @@ import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {CrisisCenterModule} from './crisis-center/crisis-center.module';
 import {ComposeMessageComponent} from './compose-message/compose-message.component';
 import {AdminModule} from './admin/admin.module';
+import {AuthModule} from './auth/auth.module';
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import {AdminModule} from './admin/admin.module';
     FormsModule,
     HeroesModule,
     AdminModule,
+    AuthModule,
     CrisisCenterModule,
     AppRoutingModule,
   ],
@@ -27,7 +29,7 @@ import {AdminModule} from './admin/admin.module';
     PageNotFoundComponent,
     ComposeMessageComponent
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {
 }
